@@ -15,6 +15,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import { Link} from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -100,8 +101,10 @@ export default function PrimarySearchAppBar() {
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>My Account</MenuItem>
       <MenuItem onClick={()=>window.open("https://genium19.github.io/vite-project/")}>Genium app</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Mamba Negra</MenuItem>
-    </Menu>
+      <MenuItem component={Link} to='/vite-project/tasklist'>
+task list
+</MenuItem>
+      </Menu>
   );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';

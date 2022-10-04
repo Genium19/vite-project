@@ -3,7 +3,7 @@ import TaskForm from "../components/TaskForm";
 function Home() {
     return (
       <>
-        <TaskForm />
+       <h1>Titulo</h1>
       </>
     );
   }

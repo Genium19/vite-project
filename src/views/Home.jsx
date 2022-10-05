@@ -1,4 +1,3 @@
-import ProductHeroLayout from "../views/ProductHeroLayout";
 import { Box } from "@mui/system";
 import ProductHero from "./ProductHero";
 

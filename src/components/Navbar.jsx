@@ -109,8 +109,8 @@ export default function PrimarySearchAppBar() {
       >
         Genium app
       </MenuItem>
-      <MenuItem component={Link} to="/vite-project/tasklist">
-        task list
+      <MenuItem component={Link} to="/vite-project/views/TaskApp">
+        Tareas app
       </MenuItem>
     </Menu>
   );

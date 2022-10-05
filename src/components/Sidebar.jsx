@@ -38,7 +38,7 @@ export default function SideBar() {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component={Link} to="/vite-project/tasklist">
+            <ListItemButton component={Link} to="/vite-project/views/TaskApp">
               <ListItemIcon>
                 <Task />
               </ListItemIcon>

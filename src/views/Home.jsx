@@ -1,5 +1,5 @@
 import { Box } from "@mui/system";
-import ProductHero from "./ProductHero";
+import ProductHero from "../components/ProductHero";
 
 
 

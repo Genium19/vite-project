@@ -1,16 +1,18 @@
 import * as React from "react";
 import Button from "../components/Button";
 import Typography from "../components/Typography";
-import ProductHeroLayout from "./ProductHeroLayout";
+import HeroVeterinariaLayout from "./HeroVeterinariaLayout";
+import FormDialog from "../components/FormDialog";
 
-const backgroundImage = "src/images/programmer.gif";
 
-export default function ProductHero() {
+const backgroundImage = "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80";
+
+export default function HeroVeterinaria() {
   return (
-    <ProductHeroLayout
+    <HeroVeterinariaLayout
       sxBackground={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundColor: "#7fc7d9", // Average color of the background image.
+        backgroundImage:  `url(${backgroundImage})`,
+        backgroundColor: "#000000", // Average color of the background image.
         backgroundPosition: "center",
       }}
     >
@@ -21,7 +23,7 @@ export default function ProductHero() {
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h2">
-        Transforme sus Canales Digitales y crezca en clientes.
+        Nuestra pasión es la salud de tu mascota.
       </Typography>
       <Typography
         color="inherit"
@@ -29,21 +31,12 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Conozca el caso Efectivo Sí
+        Más de 20 servicios para hacer feliz a tu mascota
       </Typography>
-      <Button
-        color="primary"
-        variant="contained"
-        size="large"
-        component="a"
-        href="/premium-themes/onepirate/sign-up/"
-        sx={{ minWidth: 200 }}
-      >
-        Saber más
-      </Button>
+      <FormDialog></FormDialog>
       <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
-        Mantén la innovación cerca
+        El amor extra que necesita tu mascota.
       </Typography>
-    </ProductHeroLayout>
+    </HeroVeterinariaLayout>
   );
 }

@@ -5,7 +5,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { OtherHouses, Pets, SportsEsports, Task, AssignmentLate } from '@mui/icons-material';
+import { OtherHouses, Pets, SportsEsports, Task, FormatColorFill } from '@mui/icons-material';
 import { Link } from "react-router-dom";
 
 export default function SideBar() {
@@ -43,6 +43,14 @@ export default function SideBar() {
                 <Pets />
               </ListItemIcon>
               <ListItemText primary="Veterinaria" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component={Link} to="/vite-project/views/PintaPizarra">
+              <ListItemIcon>
+                <FormatColorFill />
+              </ListItemIcon>
+              <ListItemText primary="Pinta Pizarra" />
             </ListItemButton>
           </ListItem>
         </List>

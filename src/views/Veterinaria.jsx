@@ -1,11 +1,10 @@
 import { Box } from "@mui/system";
-import FormDialog from "../components/FormDialog";
 import MiniDrawer from "../components/MiniDrawer";
 import HeroVeterinaria from "./HeroVeterinaria";
 
 
 
-function Home() {
+function Veterinaria() {
     return (
       <Box>
       <HeroVeterinaria></HeroVeterinaria>
@@ -15,4 +14,4 @@ function Home() {
     );
   }
   
-  export default Home;
+  export default Veterinaria;

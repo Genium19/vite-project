@@ -1,17 +1,15 @@
-import * as React from 'react';
+import * as React from "react";
 import SpeedDial from "../components/SpeedDial";
 import { Box } from "@mui/system";
-
-
+import Pizarra from "../components/Pizarra";
 
 function PintaPizarra() {
-    return (
-      <Box>
-<h1>Pinta Pizarra</h1>
-<SpeedDial></SpeedDial>
-      </Box>
-  
-    );
-  }
-  
-  export default PintaPizarra;
+  return (
+    <Box>
+      <Pizarra></Pizarra>
+      <SpeedDial></SpeedDial>
+    </Box>
+  );
+}
+
+export default PintaPizarra;

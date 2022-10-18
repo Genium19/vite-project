@@ -19,6 +19,11 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1"
   },
+
+  "peerDependencies": {
+    "react": "16.x || 17.x"
+  },
+
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",

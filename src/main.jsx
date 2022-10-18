@@ -7,10 +7,10 @@ import { TaskContextProvider } from './context/TaskContext'
 const container = document.getElementById("root");
 const root = createRoot(container); 
 root.render(
-  <React.StrictMode>
+  
     <TaskContextProvider>
       <App />
     </TaskContextProvider>
     
-  </React.StrictMode>
+  
 );

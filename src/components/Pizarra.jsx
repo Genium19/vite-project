@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import CanvasDraw from "react-canvas-draw";
-
 import { useIsMobileOrTablet } from "./util/isMobileOrTablet";
 import "./styles.css";
 
@@ -47,8 +46,8 @@ function Pizarra() {
         />
 
         <CanvasDraw
-          canvasWidth={1000}
-          canvasHeight={600}
+          canvasWidth={800}
+          canvasHeight={400}
           lazyRadius={0}
           brushRadius={5}
           brushColor="#151"

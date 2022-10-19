@@ -4,30 +4,23 @@ import CanvasDraw from "react-canvas-draw";
 import { useIsMobileOrTablet } from "./util/isMobileOrTablet";
 import "./styles.css";
 
+import { useState } from "react";
+import Box from "@material-ui/core/Box";
+import { ColorPicker, createColor } from "material-ui-color";
+
 function Pizarra() {
   const isMobOrTab = useIsMobileOrTablet();
+  
+  const [color, setColor] = useState(createColor("#000"));
+  const handleChange = (value) => {
+    console.log("onChange=", value);
+    setColor(value);
+  };
 
   return (
     <div className="App">
       <h1>Pinta Pizarra</h1>
       <h3>Es tu momento de ser artista, a ver que tan bueno eres dibujando.</h3>
-      {/*       <iframe
-        title="GitHub link"
-        src="https://ghbtns.com/github-btn.html?user=embiem&repo=react-canvas-draw&type=star&count=true"
-        frameBorder="100"
-        scrolling="0"
-        width="160px"
-        height="30px"
-      />
-      <p>
-        <span role="img" aria-label="fingers pointing down">
-          👇👇👇👇
-        </span>{" "}
-        Use your {isMobOrTab ? "finger" : "mouse"} to draw{" "}
-        <span role="img" aria-label="fingers pointing down">
-          👇👇👇👇
-        </span>
-      </p> */}
       <div className="canvass-container2">
         <img
           src={
@@ -50,19 +43,25 @@ function Pizarra() {
           canvasHeight={400}
           lazyRadius={0}
           brushRadius={5}
-          brushColor="#151"
+          brushColor={"#ddd"}
           style={{
             boxShadow:
               "0 13px 27px -5px rgba(50, 50, 93, 0.25),    0 8px 16px -8px rgba(0, 0, 0, 0.3)",
           }}
         />
-        {/*       <p>
-        Like what you see? Play around in{" "}
-        <a href="https://codesandbox.io/s/6lv410914w">this CodeSandbox</a> & see
-        some more{" "}
-        <a href="https://embiem.github.io/react-canvas-draw/">Advanced Demos</a>
-        !
-      </p> */}
+      </div>
+      <div>
+
+        <Box my={4}>
+          <h1>
+            Seleccione un color
+            </h1>
+          <div>
+            <ColorPicker value={color} onChange={handleChange} />
+          </div>
+        </Box>
+
+
       </div>
     </div>
   );

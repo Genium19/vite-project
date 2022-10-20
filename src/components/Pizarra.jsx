@@ -3,6 +3,7 @@ import CanvasDraw from "react-canvas-draw";
 import ReactDOM from "react-dom";
 import { useIsMobileOrTablet } from "./util/isMobileOrTablet";
 import "./styles.css";
+import Button from "@mui/material/Button";
 
 function Pizarra() {
   const isMobOrTab = useIsMobileOrTablet();
@@ -15,9 +16,17 @@ function Pizarra() {
     secondCanvas.current.loadSaveData(data);
   };
 
+  const clear = () => {
+    firstCanvas.current.clear();
+  };
+
   return (
     <div className="App">
-      <button onClick={handleClick}>Guardar</button>
+      <hr></hr>
+      <Button variant="contained" color="primary" onClick={handleClick}>
+        Guardar
+      </Button>
+      <button onClick={clear}>Borrar</button>
       <h1>Pinta Pizarra</h1>
       <h3>Es tu momento de ser artista, a ver que tan bueno eres dibujando.</h3>
       <div className="canvass-container2">

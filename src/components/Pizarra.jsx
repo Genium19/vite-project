@@ -1,13 +1,23 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import CanvasDraw from "react-canvas-draw";
+import ReactDOM from "react-dom";
 import { useIsMobileOrTablet } from "./util/isMobileOrTablet";
 import "./styles.css";
 
 function Pizarra() {
   const isMobOrTab = useIsMobileOrTablet();
 
+  const firstCanvas = useRef(null);
+  const secondCanvas = useRef(null);
+
+  const handleClick = () => {
+    const data = firstCanvas.current.getSaveData();
+    secondCanvas.current.loadSaveData(data);
+  };
+
   return (
     <div className="App">
+      <button onClick={handleClick}>Guardar</button>
       <h1>Pinta Pizarra</h1>
       <h3>Es tu momento de ser artista, a ver que tan bueno eres dibujando.</h3>
       <div className="canvass-container2">
@@ -28,11 +38,12 @@ function Pizarra() {
         />
 
         <CanvasDraw
+          ref={firstCanvas}
           canvasWidth={780}
           canvasHeight={380}
-          lazyRadius={0}
-          brushRadius={5}
-          brushColor={"#ddd"}
+          lazyRadius={10}
+          brushRadius={10}
+          brushColor={"#358"}
           style={{
             border: "10px solid #000",
             boxShadow:
@@ -40,15 +51,17 @@ function Pizarra() {
           }}
         />
       </div>
+      <hr></hr>
+      <h3>Eres en gran artista, guarda tu dibujo aqui</h3>
       <div className="canvass-container2">
         <CanvasDraw
+          ref={secondCanvas}
           canvasWidth={780}
           canvasHeight={380}
-          lazyRadius={0}
-          brushRadius={5}
-          brushColor={"#ddd"}
+          hideGrid={true}
+          disabled={true}
           style={{
-            border: "10px solid #000",
+            border: "10px solid gray",
             boxShadow:
               "0 13px 27px -5px rgba(50, 50, 93, 0.25),    0 8px 16px -8px rgba(0, 0, 0, 0.3)",
           }}

@@ -8,7 +8,7 @@ function PintaPizarra() {
   return (
     <Box>
       <Pizarra></Pizarra>
-      {/* <ColorSelect></ColorSelect> */}
+      <ColorSelect></ColorSelect>
       <SpeedDial></SpeedDial>
       
     </Box>

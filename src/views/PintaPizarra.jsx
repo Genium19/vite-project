@@ -6,12 +6,12 @@ import ColorSelect from "../components/ColorSelect";
 
 function PintaPizarra() {
   return (
-    <Box>
-      <Pizarra></Pizarra>
+    
+    <>
       <ColorSelect></ColorSelect>
+      <Pizarra></Pizarra>
       <SpeedDial></SpeedDial>
-      
-    </Box>
+    </>
   );
 }
 

@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useRef} from "react";
 import CanvasDraw from "react-canvas-draw";
 import { useIsMobileOrTablet } from "./util/isMobileOrTablet";
 import "./styles.css";
 
 function Pizarra() {
   const isMobOrTab = useIsMobileOrTablet();
-  
+
   return (
     <div className="App">
       <h1>Pinta Pizarra</h1>
@@ -35,7 +35,22 @@ function Pizarra() {
           brushColor={"#ddd"}
           style={{
             border: "10px solid #000",
-            boxShadow: "0 13px 27px -5px rgba(50, 50, 93, 0.25),    0 8px 16px -8px rgba(0, 0, 0, 0.3)",
+            boxShadow:
+              "0 13px 27px -5px rgba(50, 50, 93, 0.25),    0 8px 16px -8px rgba(0, 0, 0, 0.3)",
+          }}
+        />
+      </div>
+      <div className="canvass-container2">
+        <CanvasDraw
+          canvasWidth={780}
+          canvasHeight={380}
+          lazyRadius={0}
+          brushRadius={5}
+          brushColor={"#ddd"}
+          style={{
+            border: "10px solid #000",
+            boxShadow:
+              "0 13px 27px -5px rgba(50, 50, 93, 0.25),    0 8px 16px -8px rgba(0, 0, 0, 0.3)",
           }}
         />
       </div>

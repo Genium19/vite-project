@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export default function SideBar() {
   return (
-    <Box sx={{ display: { xs: 'none', lg: 'block', xl: 'block' }, width: '100%', maxWidth: 200, bgcolor: 'background.paper' }}>
+    <Box sx={{ display: { xs: 'block', lg: 'block', xl: 'block' }, width: '100%', maxWidth: 200, bgcolor: 'background.paper' }}>
       <nav aria-label="main mailbox folders">
         <List>
           <ListItem disablePadding>

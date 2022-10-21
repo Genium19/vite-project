@@ -15,16 +15,16 @@ export default function ColorSelect() {
 
   return (
 
-      <Container maxWidth="sm">
-        <Box my={4}>
-          <Typography variant="h4" component="h1" gutterBottom>
+    <div className= "container bg-gray-300 mx-auto p-10 max-w-sm">
+        <div>
+          <h1>
             Seleccione un color
-          </Typography>
+          </h1>
           <div>
             <ColorPicker value={color} onChange={handleChange} />
           </div>
-        </Box>
-      </Container>
+        </div>
+      </div>
 
   );
 }

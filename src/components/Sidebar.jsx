@@ -53,6 +53,14 @@ export default function SideBar() {
               <ListItemText primary="Pinta Pizarra" />
             </ListItemButton>
           </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component={Link} to="/vite-project/views/Todoindex">
+              <ListItemIcon>
+                <FormatColorFill />
+              </ListItemIcon>
+              <ListItemText primary="TodoApps" />
+            </ListItemButton>
+          </ListItem>
         </List>
       </nav>
     </Box>

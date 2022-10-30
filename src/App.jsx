@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from "./views/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PintaPizarra from "./views/PintaPizarra";
+import Todoindex from './views/Todoindex'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route element={<TaskApp />} path="/vite-project/views/TaskApp" />
           <Route element={<Veterinaria />} path="/vite-project/views/Veterinaria" /> 
           <Route element={<PintaPizarra />} path="/vite-project/views/PintaPizarra" />
+          <Route element={<Todoindex />} path="/vite-project/views/Todoindex" />
         </Routes>
       </BrowserRouter>
     </>

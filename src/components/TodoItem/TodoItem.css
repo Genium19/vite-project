@@ -1,29 +1,46 @@
 .TodoItem {
-  background-color: #adadad;
+  background-color: #e7e7e7;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 24px;
-  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  
+  
+}
+
+.TodoItem-check:hover {
+
+}
+
+
+.TodoItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
 }
 
 .TodoItem-check {
-  background-color: #0ba021fe;
+  background-color: #c8f7d0fe;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 24px;
-  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+
 }
 
 .TodoItem-p {
   margin: 24px 0 24px 24px;
   width: calc(100% - 120px);
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
+
 }
 .TodoItem-p--complete {
   text-decoration: line-through;
@@ -45,13 +62,19 @@
   position: absolute;
   left: 12px;
 }
+
+.Icon-check:hover {
+  color: #fc9300;
+
+}
+
 .Icon-check--active {
-  color: #020673;
+  color: #00ae46;
+ 
 }
 
 .Icon-delete {
   position: absolute;
-  top: -24px;
   right: 0;
 }
 .Icon-delete:hover {

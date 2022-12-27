@@ -4,7 +4,7 @@ import './TodoList.css'
 function TodoList(props) {
   return (
     <section>
-      <ul>
+      <ul className='grid'>
         {props.children}
       </ul>
     </section>

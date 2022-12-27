@@ -7,6 +7,7 @@ import { TodoItem } from '../TodoItem/index';
 import { TodoForm } from '../TodoForm/index';
 import { CreateTodoButton } from '../CreateTodoButton/index';
 import { Modal } from '../Modal/index';
+import './Todoapp.css';
 
 
 function TodoApp() {
@@ -21,17 +22,17 @@ function TodoApp() {
   } = React.useContext(TodoContext);
   
   return (
-    <React.Fragment>
+    <div className="Todoappgrid">
       <TodoCounter />
       <TodoSearch />
 
-      <TodoList>
+      <TodoList className="carditem">
         {error && <p>Desespérate, hubo un error...</p>}
         {loading && <p>Estamos cargando, no desesperes...</p>}
         {(!loading && !searchedTodos.length) && <p>¡Crea tu primer TODO!</p>}
         
         {searchedTodos.map(todo => (
-          <TodoItem
+          <TodoItem className="Todoappgriditem"
             key={todo.text}
             text={todo.text}
             completed={todo.completed}
@@ -50,7 +51,7 @@ function TodoApp() {
       <CreateTodoButton
         setOpenModal={setOpenModal}
       />
-    </React.Fragment>
+    </div>
   );
 }
 

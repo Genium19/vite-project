@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0a43b6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+/* .Todoappgrid {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #1fae4a;
+  display: grid;
+
+}
+
+.Todoappgriditem {
+  background-color: #941fae;
+}
+
+carditem
+
+.carditemm {
+  background-color: #e2410b;
+} */

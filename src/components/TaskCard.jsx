@@ -3,14 +3,14 @@ import { Container } from "@mui/system";
 import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { TaskContext } from "../context/TaskContext";
-import { avatarMorty } from "../funciones/api";
+import { todospersonajes } from "../funciones/api";
 
 function TaskCard({ task }) {
   const { deleteTask } = useContext(TaskContext);
   const [personajes, setPersonajes] = useState(null);
 
   useEffect(() => {
-    avatarMorty(setPersonajes);
+    todospersonajes(setPersonajes);
   }, []);
 
   return (

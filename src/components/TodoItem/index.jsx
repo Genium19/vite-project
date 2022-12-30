@@ -1,6 +1,8 @@
 import React from "react";
 import { EditText, EditTextarea } from "react-edit-text";
 import "./TodoItem.css";
+import ClearIcon from "@mui/icons-material/Clear";
+import CheckIcon from "@mui/icons-material/Check";
 
 function TodoItem(props) {
   return (
@@ -9,18 +11,18 @@ function TodoItem(props) {
         className={`Icon Icon-check ${props.completed && "Icon-check--active"}`}
         onClick={props.onComplete}
       >
-        O
+        <CheckIcon></CheckIcon>
       </span>
-
-      <EditTextarea
-        className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}
-        defaultValue={props.text}
-        
-      >
-        {props.text}
-      </EditTextarea>
+      <span>
+        <EditText
+          className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}
+          defaultValue={props.text}
+        >
+          {props.text}
+        </EditText>
+      </span>
       <span className="Icon Icon-delete" onClick={props.onDelete}>
-        X
+        <ClearIcon></ClearIcon>
       </span>
       {/* <EditText
         className="TodoItem"

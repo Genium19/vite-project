@@ -27,9 +27,9 @@ function TodoApp() {
       <TodoSearch />
 
       <TodoList className="carditem">
-        {error && <p>Desespérate, hubo un error...</p>}
+        {error && <p>Ops, hubo un error, por favor intenta de nuevo...</p>}
         {loading && <p>Estamos cargando, no desesperes...</p>}
-        {(!loading && !searchedTodos.length) && <p>¡Crea tu primer TODO!</p>}
+        {(!loading && !searchedTodos.length) && <p>¡Crea tu primera tarea!</p>}
         
         {searchedTodos.map(todo => (
           <TodoItem className="Todoappgriditem"

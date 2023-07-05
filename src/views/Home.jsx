@@ -1,17 +1,13 @@
 import { Box } from "@mui/system";
 import ProductHero from "./ProductHero";
-
-
+import MiniDrawerHome from "../components/MiniDrawerHome";
 
 function Home() {
-    return (
-      <Box>
+  return (
+    <Box>
       <ProductHero></ProductHero>
-      </Box>
-  
-    );
-  }
-  
-  export default Home;
-  
-  
+    </Box>
+  );
+}
+
+export default Home;

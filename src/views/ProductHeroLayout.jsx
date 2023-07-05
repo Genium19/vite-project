@@ -42,8 +42,8 @@ function ProductHeroLayout(props) {
         }}
       >
         <img
-          src="src/images/productHeroWonder.png"
-          alt="wonder"
+          src="https://img.freepik.com/vector-gratis/hacker-que-opera-ilustracion-icono-historieta-ordenador-portatil-concepto-icono-tecnologia-aislado-estilo-dibujos-animados-plana_138676-2387.jpg?w=996&t=st=1688591630~exp=1688592230~hmac=f4ced84acc02f12acf633e55c422dcceeb9653f40ed7fc2008cdefd657dcca61"
+          alt="developer"
           width="147"
           height="80"
         />
@@ -61,13 +61,11 @@ function ProductHeroLayout(props) {
           }}
         />
         <Background sx={sxBackground} />
-        <Box
-          component="img"
-          src="src/images/productHeroArrowDown.png"
-          height="16"
-          width="12"
-          alt="arrow down"
-          sx={{ position: 'absolute', bottom: 32 }}
+        <img
+          src="https://img.freepik.com/vector-premium/sitios-programacion-desarrolladores-serios-concentrados_316839-2216.jpg?w=1480"
+          alt="developer"
+          width="147"
+          height="80"
         />
       </Container>
     </ProductHeroLayoutRoot>

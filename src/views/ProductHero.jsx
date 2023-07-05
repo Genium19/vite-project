@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import Typography from "../components/Typography";
 import ProductHeroLayout from "./ProductHeroLayout";
 
-const backgroundImage = "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80";
+const backgroundImage = "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80";
 
 export default function ProductHero() {
   return (
@@ -21,7 +21,7 @@ export default function ProductHero() {
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h2">
-        Transforme sus Canales Digitales y crezca en clientes.
+        Genium Project.
       </Typography>
       <Typography
         color="inherit"
@@ -29,7 +29,7 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Conozca el caso Efectivo Sí
+        Developer
       </Typography>
       <Button
         color="primary"
@@ -39,10 +39,10 @@ export default function ProductHero() {
         href="/premium-themes/onepirate/sign-up/"
         sx={{ minWidth: 200 }}
       >
-        Saber más
+        Ver más
       </Button>
       <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
-        Mantén la innovación cerca
+        2023
       </Typography>
     </ProductHeroLayout>
   );

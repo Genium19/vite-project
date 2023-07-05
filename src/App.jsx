@@ -3,6 +3,7 @@ import TaskForm from "./components/TaskForm";
 import TaskApp from "./views/TaskApp";
 import Veterinaria from "./views/Veterinaria";
 import Navbar from "./components/Navbar";
+import MiniDrawerHome from './components/MiniDrawerHome'
 import Home from "./views/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PintaPizarra from "./views/PintaPizarra";
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar></Navbar>
+        <MiniDrawerHome></MiniDrawerHome>
         <Routes>
           <Route element={<Home />} exact path="/vite-project/" />
           <Route element={<TaskForm />} path="/vite-project/TaskForm" />

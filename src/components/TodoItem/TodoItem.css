@@ -1,0 +1,89 @@
+.TodoItem {
+  background-color: #e7e7e7;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.05s;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  min-height: 70px;
+  
+  
+  
+}
+
+.TodoItem-check:hover {
+
+}
+
+
+.TodoItem:hover {
+  outline: 2px solid rgb(236, 126, 0);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  
+
+}
+
+.TodoItem-check {
+  background-color: #c8f7d0fe;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.TodoItem-p {
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 120px);
+
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  /* background-color: #CCC; */
+}
+
+.Icon-check {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.Icon-check:hover {
+  color: #fc9300;
+
+}
+
+.Icon-check--active {
+  color: #00ae46;
+ 
+}
+
+.Icon-delete {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+.Icon-delete:hover {
+  color: red;
+}

@@ -1,7 +1,7 @@
 import TaskCard from "./TaskCard";
 import { useContext } from "react";
 import { TaskContext } from "../context/TaskContext";
-import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from '@mui/material/Grid';
 import Container from "@mui/material/Container";
 import { Paper } from "@mui/material";
 
@@ -14,13 +14,13 @@ function TaskList() {
 
   return (
     <Container>
-      <Grid2 container spacing={4} columns={12}>
+      <Grid container spacing={4} columns={12}>
         {tasks.map((task) => (
-          <Grid2 key={task.id} xs={12} md={6} lg={4}>
+          <Grid key={task.id} xs={12} md={6} lg={4}>
             <Paper> <TaskCard key={task.id} task={task} /> </Paper> 
-          </Grid2>
+          </Grid>
         ))}
-      </Grid2>
+      </Grid>
     </Container>
   );
 }

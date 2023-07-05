@@ -5,6 +5,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import SavingsIcon from '@mui/icons-material/Savings';
 import { OtherHouses, Pets, SportsEsports, Task, FormatColorFill, Assignment } from '@mui/icons-material';
 import { Link } from "react-router-dom";
 
@@ -59,6 +60,14 @@ export default function SideBar() {
                 <Assignment />
               </ListItemIcon>
               <ListItemText primary="TodoApps" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component={Link} to="/vite-project/views/VinoncePage">
+              <ListItemIcon>
+                <SavingsIcon />
+              </ListItemIcon>
+              <ListItemText primary="Vinonce" />
             </ListItemButton>
           </ListItem>
         </List>

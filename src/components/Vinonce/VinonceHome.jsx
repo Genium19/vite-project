@@ -4,6 +4,8 @@ import "./script";
 import { blue } from "material-ui-colors";
 import color from "material-ui-colors/dist/amber";
 
+
+(async () => {
 let result;
 const url = "https://binance43.p.rapidapi.com/avgPrice?symbol=BTCUSDT";
 const options = {
@@ -43,6 +45,8 @@ try {
 
 let parsedResponseEth = JSON.parse(resultEth);
 let priceEth = parsedResponseEth.price;
+
+})();
 
 function agregarPrecio() {
   var div = document.getElementById("precios");

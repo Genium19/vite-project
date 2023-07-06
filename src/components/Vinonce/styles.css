@@ -8,8 +8,10 @@ body {
   /* Estilos del encabezado */
   header {
     background-color: #333;
-    color: #fff;
+    color: #f8f009;
     padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
   }
   
   header h1 {

@@ -188,7 +188,12 @@ export default function MiniDrawer() {
           </Box>
         </Toolbar>
       </AppBar>
-      <Drawer variant="permanent" open={open}>
+      <Drawer
+        onMouseEnter={handleDrawerOpen}
+        onMouseLeave={handleDrawerClose}
+        variant="permanent"
+        open={open}
+      >
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "rtl" ? (
@@ -231,7 +236,7 @@ export default function MiniDrawer() {
                 px: 2.5,
               }}
               component={Link}
-              to="/vite-project/"
+              to="/vite-project/views/CurriculoPage"
             >
               <ListItemIcon
                 sx={{
@@ -416,7 +421,11 @@ export default function MiniDrawer() {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         <Typography paragraph>
-        Bienvenidos al Genium Project, aquí encontrarás una galería de proyectos donde podrás prototipos de aplicaciones web, juegos y diversos desarrollos. También te invito a visitar y navegar por el menú en donde podrás explorar y experimentar de primera mano mi trabajo.
+          Bienvenidos al Genium Project, aquí encontrarás una galería de
+          proyectos donde podrás prototipos de aplicaciones web, juegos y
+          diversos desarrollos. También te invito a visitar y navegar por el
+          menú en donde podrás explorar y experimentar de primera mano mi
+          trabajo.
         </Typography>
       </Box>
     </Box>

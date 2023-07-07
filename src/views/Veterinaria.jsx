@@ -8,7 +8,6 @@ function Veterinaria() {
     return (
       <Box>
       <HeroVeterinaria></HeroVeterinaria>
-      <MiniDrawer></MiniDrawer>  
       </Box>
   
     );

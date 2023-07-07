@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PintaPizarra from "./views/PintaPizarra";
 import Todoindex from "./views/Todoindex"
 import VinoncePage from "./views/VinoncePage";
+import CurriculoPage from './views/CurriculoPage'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route element={<Home />} exact path="/vite-project/" />
           <Route element={<TaskForm />} path="/vite-project/TaskForm" />
+          <Route element={<CurriculoPage/>} path="/vite-project/views/CurriculoPage" /> 
           <Route element={<TaskList />} path="/vite-project/TaskList" />
           <Route element={<TaskApp />} path="/vite-project/views/TaskApp" />
           <Route element={<Veterinaria />} path="/vite-project/views/Veterinaria" /> 

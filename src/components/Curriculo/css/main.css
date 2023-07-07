@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+.cv-main {
+  background-color: #DAFFFB;
+  color: #001C30;
+}
+.cv-main header {
+  background-color: #64CCC5;
+  padding: 32px;
+  margin-bottom: 2%;
+  border-radius: 20px;
+}
+.cv-main header p {
+  padding: 2% 6% 2% 6%;
+  font-weight: 400;
+  font-size: 22px;
+  color: #176B87;
+}
+.cv-main h2 {
+  font-size: 2rem;
+  padding-left: 20px;
+  font-weight: 600;
+  color: #176B87;
+}
+.cv-main.modo-oscuro {
+  background-color: #001C30;
+  color: #DAFFFB;
+}
+.cv-main.modo-oscuro header {
+  background-color: #001C30;
+  padding: 32px;
+  margin-bottom: 2%;
+  border-radius: 20px;
+  border: 1px solid #64CCC5;
+}
+
+.container-modo-oscuro {
+  display: flex;
+  justify-content: end;
+  height: 80px;
+}
+
+.icon-modo-light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #000000;
+}
+.icon-modo-light path {
+  fill: white;
+}
+
+.icon-modo-dark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #fff;
+}
+.icon-modo-dark path {
+  fill: #001C30;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logos-container {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 1%;
+}
+
+.logos-container > div {
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+  font-size: 4rem !important;
+  font-weight: 900;
+  color: #176B87;
+  margin: 0;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.st0 {
+  fill: #fff;
+}
+
+.st1 {
+  fill: #ed5168;
+}
+
+.st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #9E8317;
+}
+
+.st1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #F8461C;
+}
+
+.st2 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FFBF7B;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+$font-stack: 'Ubuntu', sans-serif;
+$primary-color:#001C30;
+$secundary-color: #64CCC5;
+$tertiary-color: #DAFFFB;
+$primary-text-color: #176B87;
+
+.cv-main {
+    background-color: $tertiary-color;
+    color: $primary-color;
+    header {
+        background-color: $secundary-color;
+        padding: 32px;
+        margin-bottom: 2%;
+        border-radius: 20px;
+    }
+    header p {
+        padding: 2% 6% 2% 6%;
+        font-weight: 400;
+        font-size: 22px;
+        color: $primary-text-color;
+    }
+    h2 {
+        font-size: 2rem;
+        padding-left: 20px;
+        font-weight: 600;
+        color: $primary-text-color;
+    }
+  
+    &.modo-oscuro {
+      background-color: $primary-color;
+      color: $tertiary-color;
+      header {
+        background-color: $primary-color;
+        padding: 32px;
+        margin-bottom: 2%;
+        border-radius: 20px;
+        border: 1px solid $secundary-color;
+    }
+      
+      
+    }
+}
+
+.container-modo-oscuro {
+    display: flex;
+    justify-content: end;
+    height: 80px;
+}
+
+.icon-modo-light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #000000;
+    path {
+        fill: white;
+  }
+}
+
+.icon-modo-dark {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #fff;
+    path {
+        fill: $primary-color;
+  }
+}
+  
+body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+
+}
+
+.logos-container {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1%;
+
+}
+
+.logos-container>div {
+    width: 50px;
+    height: 50px;
+
+}
+
+h1 {
+    font-size: 4rem !important;
+    font-weight: 900;
+    color: $primary-text-color;
+    margin: 0;
+    padding: 20px;
+}
+
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.st0{fill:#fff}.st1{fill:#ed5168}
+
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#9E8317;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#F8461C;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFBF7B;}

@@ -3,7 +3,7 @@ import CurriculoDev from '../components/Curriculo/CurriculoDev'
 
 function CurriculoPage() {
   return (
-    <div className="bg-gray-300">
+    <div>
       <CurriculoDev/>
     </div>
   );

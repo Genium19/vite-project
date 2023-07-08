@@ -3,8 +3,7 @@
 @tailwind utilities;
 
   #root {
-  /* Ajusta los valores según tus necesidades */
-  margin-left: 50px; /* Ancho de la barra lateral */
+  margin-left: 50px; 
   padding: 20px;
 }
   

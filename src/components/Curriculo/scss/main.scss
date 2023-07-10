@@ -101,6 +101,9 @@ $dark-color: black;
         border-radius: 20px;
         border: 1px solid $secundary-color;
     }   
+    h1 {
+        color: $secundary-color;
+    }
     .tab-buttons {
         background-color: $primary-text-color;
         color: $primary-color;
@@ -145,18 +148,23 @@ body {
 }
 
 .logos-container {
-    padding: 1%;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     gap: 1%;
 
 }
 
 .logos-container>div {
+    display: flex;
     width: 50px;
     height: 50px;
+}
 
+.logo-react, .logo-nodejs {
+    padding: 3px;
+    background-color: $light-color;
+    border-radius: 15px;
 }
 
 section {
@@ -179,6 +187,54 @@ strong {
     font-weight: bold;
 }
 
+.containermario {
+    position: relative;
+    width: 800px;
+
+  }
+  
+  .jumping-svg {
+    cursor: pointer;
+  }
+  
+  .jump-animation {
+    animation: jump-animation 0.5s ease-in-out;
+  }
+  
+  @keyframes jump-animation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .mario {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s;
+    outline: none;
+  }
+  
+  .walking {
+    animation: walk-animation 12s steps(150) infinite;
+
+  }
+  
+  @keyframes walk-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(1400px);
+    }
+  }
+
 .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#9E8317;}
 .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#F8461C;}
 .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFBF7B;}
@@ -194,7 +250,7 @@ strong {
     font-size: 1.2rem;
     margin-top: 60px;
     padding: 0 3% 0 3%;
-    height: 900px;
+    height: 100vw;
     overflow: auto;
 }
 

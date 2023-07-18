@@ -3,7 +3,7 @@
 @tailwind utilities;
 
   #root {
-  margin-left: 50px; 
-  padding: 20px;
+  margin-left: 0; 
+  padding: 0;
 }
   

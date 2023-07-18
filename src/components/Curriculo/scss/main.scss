@@ -2,11 +2,16 @@
 
 $font-stack: 'Ubuntu', sans-serif;
 $primary-color:#001C30;
-$secundary-color: #cc8164;
+$secundary-color: #64CCC5;
 $tertiary-color: #DAFFFB;
 $primary-text-color: #176B87;
 $light-color: white;
 $dark-color: black;
+
+
+main {
+  margin: 1rem 4rem;
+}
 
 .cv-main {
     background-color: $light-color;

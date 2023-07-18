@@ -1,6 +1,19 @@
 // styles.scss
-$primary-color: #ff0000;
-
-header {
-    background-color: $primary-color;
-}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
+  
+  .grid-item {
+    // Estilos para los elementos de la rejilla
+  }
+  

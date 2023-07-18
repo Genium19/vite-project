@@ -31,6 +31,7 @@ import {
   Assignment,
 } from "@mui/icons-material";
 import SavingsIcon from "@mui/icons-material/Savings";
+import FlightLandIcon from '@mui/icons-material/FlightLand';
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FaceRetouchingNaturalIcon from "@mui/icons-material/FaceRetouchingNatural";
 import { Link } from "react-router-dom";
@@ -415,10 +416,35 @@ export default function MiniDrawer() {
               />
             </ListItemButton>
           </ListItem>
+          <ListItem key="landingpage" disablePadding sx={{ display: "block" }}>
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+              }}
+              component={Link}
+              to="/vite-project/views/LandingPage"
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              >
+                <FlightLandIcon />
+              </ListItemIcon>
+              <ListItemText
+                primary="Landing Page"
+                sx={{ opacity: open ? 1 : 0 }}
+              />
+            </ListItemButton>
+          </ListItem>
         </List>
       </Drawer>
       <DrawerHeader />
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+      {/* <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         <Typography paragraph>
           Bienvenidos al Genium Project, aquí encontrarás una galería de
@@ -427,7 +453,7 @@ export default function MiniDrawer() {
           menú en donde podrás explorar y experimentar de primera mano mi
           trabajo.
         </Typography>
-      </Box>
+      </Box> */}
     </Box>
   );
 }

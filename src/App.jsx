@@ -4,12 +4,13 @@ import TaskApp from "./views/TaskApp";
 import Veterinaria from "./views/Veterinaria";
 import Navbar from "./components/Navbar";
 import MiniDrawerHome from './components/MiniDrawerHome'
-import Home from "./views/Home";
+import HomePage from "./views/HomePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PintaPizarra from "./views/PintaPizarra";
 import Todoindex from "./views/Todoindex"
 import VinoncePage from "./views/VinoncePage";
 import CurriculoPage from './views/CurriculoPage'
+import LandingPage from "./views/LandingPage";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <BrowserRouter>
         <MiniDrawerHome></MiniDrawerHome>
         <Routes>
-          <Route element={<Home />} exact path="/vite-project/" />
+          <Route element={<HomePage />} exact path="/vite-project/" />
           <Route element={<TaskForm />} path="/vite-project/TaskForm" />
           <Route element={<CurriculoPage/>} path="/vite-project/views/CurriculoPage" /> 
           <Route element={<TaskList />} path="/vite-project/TaskList" />
@@ -26,6 +27,7 @@ function App() {
           <Route element={<Veterinaria />} path="/vite-project/views/Veterinaria" /> 
           <Route element={<PintaPizarra />} path="/vite-project/views/PintaPizarra" />
           <Route element={<VinoncePage/>} path="/vite-project/views/VinoncePage" /> 
+          <Route element={<LandingPage/>} path="/vite-project/views/LandingPage" /> 
           <Route element={<Todoindex />} path="/vite-project/views/Todoindex" />
         </Routes>
       </BrowserRouter>

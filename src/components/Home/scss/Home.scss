@@ -1,5 +1,6 @@
-h1 {
-    font-size: 24px !important;
-    font-weight: bold;
-    color: rgb(48, 4, 222);
-  }
+// styles.scss
+$primary-color: #ff0000;
+
+header {
+    background-color: $primary-color;
+}

@@ -5,8 +5,11 @@ function Home() {
   return (
     <div>
       <body>
-        <h1>Hola Genium</h1>
+        <header className='bg-red-500 bg-opacity-50'>
+        <h1 className="text-5xl text-sky-600 text-center">Proyecto Genium</h1>
+        </header>
       </body>
+
     </div>
   );
 }

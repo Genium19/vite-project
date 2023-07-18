@@ -8,7 +8,6 @@ body {
   /* Estilos del encabezado */
   header {
     background-color: #333;
-    color: #f8f009;
     padding: 10px;
     font-size: 30px;
     font-weight: 500;
@@ -16,6 +15,7 @@ body {
   
   header h1 {
     margin: 0;
+    color: #f8f009;
   }
   
   nav ul {

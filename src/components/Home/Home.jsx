@@ -44,7 +44,7 @@ function Home() {
             <p className="mt-4 xs:text-lg lg:text-xl text-gray-600">
               En esta aplicación verás algunos proyectos que he realizado
             </p>
-            <button className="mt-4 bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded mx-auto block">
+            <button className="mt-4 bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded-full mx-auto block">
               Ver Curriculo
             </button>
           </div>
@@ -60,51 +60,40 @@ function Home() {
 
         <section className="products py-12">
           <h2 className="text-2xl text-center mb-6">Proyectos Realizados</h2>
-          <div className="grid grid-cols-3 gap-6">
-            <div className="product">
-              {/* Contenido del producto */}
-              <img
-                src="producto1.jpg"
-                alt="Pokomonos"
-                className="w-full h-auto"
-              />
-              <h3 className="text-lg text-center font-semibold mt-2">
+          <div className="grid xs:mx-0 xs:px-4 sm:mx-4 sm:px-8 md:px-20 gap-6 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-white">
+            <div className="product relative bg-imgpokomonos bg-cover rounded-3xl p-10">
+            <div className="absolute inset-0 bg-primary bg-opacity-70 rounded-3xl"></div>
+              <h3 className="relative text-lg text-center font-semibold mt-2">
                 Pokomonos
               </h3>
-              <p className="text-center">Game Developer</p>
-              <button className="bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded mt-2 mx-auto block">
+              <p className="relative text-center">Game Developer</p>
+              <button className="relative bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded mt-2 mx-auto block">
                 Jugar
               </button>
+
             </div>
-            <div className="product">
-              {/* Contenido del producto */}
-              <img
-                src="producto2.jpg"
-                alt="TO DO Machine"
-                className="w-full h-auto"
-              />
-              <h3 className="text-lg text-center font-semibold mt-2">
+
+            <div className="product relative bg-imgtodo bg-cover bg-center rounded-3xl p-10">
+            <div className="absolute inset-0 bg-primary bg-opacity-70 rounded-3xl"></div>
+              <h3 className="relative text-lg text-center font-semibold mt-2">
                 TO DO Machine
               </h3>
-              <p className="text-center">Organiza tus tareas</p>
-              <button className="bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded mt-2 mx-auto block">
+              <p className="relative text-center">Organiza tus tareas</p>
+              <button className="relative bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded mt-2 mx-auto block">
                 Comenzar
               </button>
+
             </div>
-            <div className="product">
-              {/* Contenido del producto */}
-              <img
-                src="producto3.jpg"
-                alt="Pinta Pizarra"
-                className="w-full h-auto"
-              />
-              <h3 className="text-lg text-center font-semibold mt-2">
+            <div className="product relative bg-imgtodo bg-cover bg-center rounded-3xl p-10">
+            <div className="absolute inset-0 bg-primary bg-opacity-70 rounded-3xl p-10"></div>
+              <h3 className="relative text-lg text-center font-semibold mt-2">
                 Pinta Pizarra
               </h3>
-              <p className="text-center">Eres una artista en potencia</p>
-              <button className="bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded mt-2 mx-auto block">
+              <p className="relative text-center">Eres un artista en potencia</p>
+              <button className="relative bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded mt-2 mx-auto block">
                 Dar pinceladas
               </button>
+  
             </div>
           </div>
         </section>

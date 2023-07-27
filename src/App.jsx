@@ -11,6 +11,7 @@ import Todoindex from "./views/Todoindex"
 import VinoncePage from "./views/VinoncePage";
 import CurriculoPage from './views/CurriculoPage'
 import LandingPage from "./views/LandingPage";
+import PizzaPage from './views/PizzaPage'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route element={<VinoncePage/>} path="/vite-project/views/VinoncePage" /> 
           <Route element={<LandingPage/>} path="/vite-project/views/LandingPage" /> 
           <Route element={<Todoindex />} path="/vite-project/views/Todoindex" />
+          <Route element={<PizzaPage />} path="/vite-project/views/PizzaPage" />
         </Routes>
       </BrowserRouter>
     </>

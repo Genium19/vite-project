@@ -17,6 +17,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
+import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
 import {
   OtherHouses,
   Search,
@@ -437,6 +438,31 @@ export default function MiniDrawer() {
               </ListItemIcon>
               <ListItemText
                 primary="Landing Page"
+                sx={{ opacity: open ? 1 : 0 }}
+              />
+            </ListItemButton>
+          </ListItem>
+          <ListItem key="PizzaPage" disablePadding sx={{ display: "block" }}>
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+              }}
+              component={Link}
+              to="/vite-project/views/PizzaPage"
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              >
+                <LocalPizzaIcon />
+              </ListItemIcon>
+              <ListItemText
+                primary="Pizza App"
                 sx={{ opacity: open ? 1 : 0 }}
               />
             </ListItemButton>

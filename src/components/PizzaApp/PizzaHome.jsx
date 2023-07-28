@@ -1,7 +1,11 @@
+import Calculadora from './Calculadora'
+
+
 function PizzaHome() {
     return (
-      <div className="App">
-        <h1>¡Bienvenido a mi aplicación!</h1>
+      <div>
+        <h1 className='text-center'>Pizza App</h1>
+        <Calculadora></Calculadora>
       </div>
     );
   }

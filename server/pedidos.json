@@ -1,0 +1,15 @@
+[
+  {
+    "nombre": "Fabrizio Suarez",
+    "tamano": "pequena",
+    "toppings": []
+  },
+  {
+    "nombre": "Gerardo",
+    "tamano": "grande",
+    "toppings": [
+      "hongos",
+      "jamon"
+    ]
+  }
+]
